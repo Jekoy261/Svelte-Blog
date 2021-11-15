@@ -1,11 +1,19 @@
 <script>
+	import Router from 'svelte-spa-router';
+	import Home from './Pages/Home.svelte';
 	export let name;
 </script>
 
+<Router routes={{
+	'/' : Home,
+}} />
+
+<!-- 
 <main>
 	<h1>Hello {name}!</h1>
 	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-</main>
+</main> 
+-->
 
 <style>
 	main {
